@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function CanSubmit(){
+                //alert("OK");
+                var pwd=document.forms[0].txtPassword.value
+                var cpwd=document.forms[0].txtConfirmPassword.value
+                if (pwd==cpwd)
+                return true;
+                else{
+                    alert("Please make sure that password and confirm password are same");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" method="post" onsubmit="return CanSubmit()">
+        Password:<input type="password" name="txtPassword" value=""/><br/>
+    txtConfirmPassword:<input type="password" name="txtConfirmPassword" value=""/><br/>
+    <input type="submit" name="btnSubmit" value="submit"/>
+</form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration page</title>
+    
+
+    
+    </head>
+    
+    <body>
+        <div>
+            <form name="Form">
+                <label for="firstname">First Name: </label><br>
+                <input type="text" name="firstname" value=" firstname"><br>
+                <label for="lastname">Last Name: </label><br>
+                <input type="text" name="lastname" value="lastname"><br>
+                <label for="email">Email: </label><br>
+                <input type="text" id="txtEmail" name="email" value=" your email" onkeyup="validateEmail()"><br>
+                <label for="text">Phone Number: </label><br>
+                <input type="text" name="phonenumber" value="Phone number" onclick="validatePhoneNumber()"><br>
+                <input type="submit" value="submit" id="submit" onclick="return validateSubmit()">
+                <input type="button" value="Reset" id="reset" onclick="validateReset()">
+            </form>
+        </div>
+    
+    </body>
+    
+    </html>

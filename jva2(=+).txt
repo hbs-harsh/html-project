@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="abc"></p>
+<script>
+name1="Welcome to";
+name1+="lovely professional university";
+document.getElementByid("abc").innerHTML = name1;
+</script>
+</body>
+</html>

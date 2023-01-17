@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 3px;
+        }
+        
+    </style>
+    <script>
+        function phoneNumber(){
+            var pass =document.Form.phonenumber.value;
+            if (isNaN(pass)){
+                document.Form.phonenumber.value="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="Form">
+        <label for="firstname">First Name: </label><br>
+        <input type="text" name="firstname" placeholder="Enter your firstname" ><br>
+        <label for="lastname">Last Name: </label><br>
+        <input type="text" name="lastname" placeholder="Enter your lastname" ><br>
+        <label for="email">Email: </label><br>
+        <input type="text" name="email" placeholder="Enter your email"><br>
+        <label for="text">Phone Number: </label><br>
+        <input type="text" name="phonenumber" placeholder="Phone number"  onkeyup ="phoneNumber()"><br>
+        <input type="submit" value="submit" onclick="">
+        <input type="reset" >
+    </form>
+</body>
+</html>

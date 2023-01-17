@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function ValidateMathFunction()
+            {
+                var FN=document.forms[0].txtFN.value;
+                var SN=document.forms[0].txtSN.value;
+                if ( FN == "" || SN =="" || isNaN(FN) || isNaN(SN)){
+                     alert("Please ensure ");
+                    return false;
+                }
+                else
+                  return true;
+
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" method="post" onsubmit="return ValidateMathFunction()">
+        Enter First Number<input type="text" name="txtFN" value=""/><br/>
+        Enter second Number<input type="text" name="txtSN" value=""/><br/>
+        <input type="submit" name="btnAdd" value="+"/>
+        <input type="submit" name="btnSub" value="-"/>
+        <input type="submit" name="btnMul" value="*"/>
+        <input type="submit" name="btnDel" value="/"/>
+
+    </form>
+    </body>
+    </html>
+
